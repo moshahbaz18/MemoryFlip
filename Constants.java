@@ -1,0 +1,2 @@
+package com.memoryflip.util;
+public final class Constants { private Constants(){} public static final String TITLE="MEMORY FLIP"; public static final String[] TIPS={"MATCH • REMEMBER • CONQUER","Think fast. Remember faster.","Every pair counts."}; }
