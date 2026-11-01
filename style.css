@@ -1,0 +1,19 @@
+* { -fx-font-family: "Segoe UI", "Arial"; }
+.root { -fx-background-color: linear-gradient(to bottom right,#080B16,#111827); -fx-text-fill:#F8FAFC; }
+.title { -fx-text-fill:#F8FAFC; -fx-font-size:42px; -fx-font-weight:900; -fx-effect:dropshadow(gaussian,rgba(124,58,237,.55),22,0.4,0,0); }
+.subtitle { -fx-text-fill:#06B6D4; -fx-font-size:16px; -fx-font-weight:bold; -fx-letter-spacing:3px; }
+.small-title { -fx-text-fill:#F8FAFC; -fx-font-size:25px; -fx-font-weight:bold; }
+.topbar { -fx-padding:18px 22px; -fx-background-color:rgba(17,24,39,.92); -fx-border-color:#263247; -fx-border-width:0 0 1px 0; }
+.stats { -fx-text-fill:#DDE7F5; -fx-font-size:15px; -fx-font-weight:bold; }
+.button { -fx-background-color:#182338; -fx-text-fill:#F8FAFC; -fx-font-size:14px; -fx-font-weight:bold; -fx-background-radius:12px; -fx-padding:10px 18px; -fx-cursor:hand; }
+.button:hover { -fx-background-color:#7C3AED; -fx-scale-x:1.03; -fx-scale-y:1.03; }
+.menu-button { -fx-pref-width:360px; -fx-pref-height:48px; -fx-font-size:15px; -fx-background-color:linear-gradient(to right,#182338,#202B45); }
+.menu-button:hover { -fx-background-color:linear-gradient(to right,#7C3AED,#06B6D4); }
+.card-grid { -fx-padding:20px; }
+.memory-card { -fx-background-color:linear-gradient(to bottom right,#17213A,#24304E); -fx-background-radius:18px; -fx-border-radius:18px; -fx-border-color:#384766; -fx-border-width:1px; -fx-text-fill:#F8FAFC; -fx-font-size:38px; -fx-font-weight:bold; -fx-effect:dropshadow(gaussian,rgba(0,0,0,.45),12,0.25,0,5); -fx-cursor:hand; }
+.memory-card:hover { -fx-border-color:#06B6D4; -fx-background-color:#243354; -fx-scale-x:1.04; -fx-scale-y:1.04; }
+.memory-card.matched { -fx-background-color:linear-gradient(to bottom right,#14532D,#166534); -fx-border-color:#22C55E; }
+.overlay { -fx-background-color:rgba(8,11,22,.88); }
+.dialog-box { -fx-background-color:linear-gradient(to bottom right,#111827,#1B263B); -fx-padding:45px; -fx-background-radius:22px; -fx-text-fill:#F8FAFC; }
+.result-text,.body-text { -fx-text-fill:#DDE7F5; -fx-font-size:18px; -fx-line-spacing:9px; -fx-text-alignment:center; }
+.achievement { -fx-text-fill:#E7EDF8; -fx-font-size:18px; -fx-padding:10px 18px; -fx-background-color:#111827; -fx-background-radius:10px; -fx-min-width:420px; }
