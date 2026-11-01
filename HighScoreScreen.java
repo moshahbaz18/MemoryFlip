@@ -1,0 +1,5 @@
+package com.memoryflip.ui;
+import com.memoryflip.MemoryFlipApp; import com.memoryflip.manager.HighScoreManager; import javafx.geometry.*; import javafx.scene.control.*; import javafx.scene.layout.*;
+public class HighScoreScreen extends VBox {
+    public HighScoreScreen(MemoryFlipApp app,HighScoreManager h){setAlignment(Pos.TOP_CENTER);setSpacing(14);getStyleClass().add("root");setPadding(new Insets(40));Label t=new Label("HIGH SCORES");t.getStyleClass().add("title");GridPane g=new GridPane();g.setHgap(25);g.setVgap(10);String[] heads={"RANK","PLAYER","SCORE","DIFFICULTY","TIME","MOVES","DATE"};for(int i=0;i<heads.length;i++)g.add(new Label(heads[i]),i,0);int r=1;for(var e:h.entries()){String[] x={String.valueOf(r++),e.player(),String.valueOf(e.score()),e.difficulty(),e.time(),String.valueOf(e.moves()),e.date()};for(int i=0;i<x.length;i++)g.add(new Label(x[i]),i,r);}Button b=new Button("BACK");b.setOnAction(e->app.showMenu());getChildren().addAll(t,g,b);}
+}
